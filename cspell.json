@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": [
+    "alpinejs",
+    "smoosee"
+  ],
+  "ignoreWords": [],
+  "import": [],
+  "language": "en, uk, ru"
+}

@@ -1,0 +1,18 @@
+---
+import path from "path";
+const mode = process.env.NODE_ENV;
+const isDev = mode === "development";
+
+const __dirname = path.resolve();
+---
+
+{
+  isDev ? (
+    <link
+      rel="stylesheet"
+      href={`${(path.resolve(__dirname), "src/styles/main.css")}`}
+    />
+  ) : (
+    <link rel="stylesheet" href="./styles/main.css" />
+  )
+}

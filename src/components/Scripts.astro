@@ -1,0 +1,18 @@
+---
+import path from "path";
+const mode = process.env.NODE_ENV;
+const isDev = mode === "development";
+
+const __dirname = path.resolve();
+---
+
+{
+  isDev && (
+    <script src={`${(path.resolve(__dirname), "src/scripts/alpine.js")}`} />
+    <script src={`${(path.resolve(__dirname), "src/scripts/main.js")}`} />
+  )
+}
+{!isDev && (
+  <script is:inline src="./js/alpine.js" />
+  <script is:inline src="./js/main.js" />
+)}

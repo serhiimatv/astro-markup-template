@@ -1,0 +1,22 @@
+@use "fonts";
+@use "test";
+body {
+  font-family: "Pacifico";
+}
+h1 {
+  color: red;
+  font-size: 20px;
+  font-family: "Pacifico";
+}
+
+.counter {
+  &__button {
+    background-color: transparent;
+    border: none;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: "Pacifico";
+    cursor: pointer;
+  }
+}
